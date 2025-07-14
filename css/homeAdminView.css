@@ -1,0 +1,13 @@
+.container-button{
+    background-color: aqua;
+    display: flex;
+    justify-content:flex-end;
+    padding: 5% 5%;
+    height: 10vh;
+}
+
+.button{
+    background-color: blueviolet;
+    width: 5%;
+
+}

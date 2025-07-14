@@ -1,14 +1,25 @@
 {
-    "users":[
-        {
-            "email":"admin@gmail.com",
-            "password":"admin@",
-            "rol": "admin"
-        },
-        {
-            "email":"sofia@gmail.com",
-            "password":"sofia123",
-            "rol":"user"
-        }
-    ]
+  "users": [
+    {
+      "fullname": "administrator",
+      "email": "admin@gmail.com",
+      "password": "admin@",
+      "rol": "admin"
+    },
+    {
+      "fullname": "Ana Sofia Lopera Giraldo",
+      "email": "sofia@gmail.com",
+      "password": "sofia123",
+      "rol": "user"
+    }
+  ],
+  "events":[
+    {
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgrzIas0rtIyJ7ccScxSgfjbh1XYTCuO6Qdg&s",
+      "description":"Lindo evento",
+      "capacity":12,
+      "date":"15/02/2025"
+    }
+  ]
+
 }

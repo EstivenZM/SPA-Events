@@ -7,7 +7,9 @@ loginView(containerPage)
 hashChangeUser()
 
 
-let auth = 
-
+let auth = sessionStorage.getItem("auth")
+if (auth!=true){
+    loginView(containerPage)
+}
 
 

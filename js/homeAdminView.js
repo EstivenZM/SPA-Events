@@ -1,15 +1,24 @@
-import { containerPage } from "../index.js";
+import { containerPage, aside } from "../index.js";
 import { appURL } from "../config.js";
+import { hashChangeUser } from "../routes.js";
+import { routePath } from "../routes.js";
 
 export function homeAdminView() {
+    let auth = sessionStorage.getItem("auth")
+    if (auth != "true") {
+        window.location.hash = "#/login"
+    }else{
+        window.location.hash ="#/dashboard/events/#home"
+    }
+    aside.innerHTML = `<h1>Hola</h1>`
     containerPage.innerHTML = `
         <div class="row">
-        <div class="col-md-1">
+                <div class="col-md-1 vh-100">
             aa
         </div>
-        <div class="col-md-11">
+        <div class="col-md-11" id="containerPageDashboard">
             <div class="row container-button mt-5">
-                <button class="button">hola</button>
+                <button class="button" id="createEvent"><a href="#/dashboard/events/#create">Crear evento</a></button>
             </div>
             <div class="row">
                 <table class="table">
@@ -27,16 +36,23 @@ export function homeAdminView() {
 
                     </tbody>
                 </table>
+                <button class="btn btn-danger" type="button" id="logOut">Cerrar sesion</button>
             </div>
         </div>
     </div>
     `
     getEvents()
 
+    let logOut = document.getElementById("logOut")
+    logOut.addEventListener("click", () => {
+        sessionStorage.clear()
+        window.location.hash = "#/login"
+    })
+
     async function getEvents() {
         let eventInfo = document.getElementById("eventInfo")
-        const res = await fetch(appURL+"/events")
-        const events= await res.json()
+        const res = await fetch(appURL + "/events")
+        const events = await res.json()
         events.forEach(event => {
             eventInfo.innerHTML += `
                         <tr>
@@ -53,5 +69,10 @@ export function homeAdminView() {
                         </tr>`
         });
     }
-
 }
+
+
+
+
+
+

@@ -3,6 +3,8 @@ import { containerPage } from "../index.js";
 import { appURL } from "../config.js";
 
 export function loginView() {
+    let auth = sessionStorage.getItem("auth")
+
     containerPage.innerHTML = `
     <div class="container mt-5 d-flex aling-center justify-content-center">
             <form id="formLogin">
@@ -37,9 +39,12 @@ export function loginView() {
     function login(users) {
         let validate = users.find(user => (user.email == userEmail.value && user.password == userPassword.value))
         if (validate && validate.rol == "admin") {
-            window.location.hash ="/dashboard/events/#home"
-        } else if(validate.rol=="user") {
-            window.location.hash="/dashboard/user/#enrollments"
+            window.location.hash = "/dashboard/events/#home"
+            sessionStorage.setItem("auth", "true")
+        } else if (validate.rol == "user") {
+            sessionStorage.setItem("auth", "true")
+            sessionStorage.setItem("user", validate.email)
+            window.location.hash = "/dashboard/user/#home"
         }
     }
     let buttonRegister = document.getElementById("register")

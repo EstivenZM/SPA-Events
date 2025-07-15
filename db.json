@@ -4,22 +4,75 @@
       "fullname": "administrator",
       "email": "admin@gmail.com",
       "password": "admin@",
-      "rol": "admin"
+      "rol": "admin",
+      "events": [],
+      "id": "57a4"
     },
     {
       "fullname": "Ana Sofia Lopera Giraldo",
       "email": "sofia@gmail.com",
       "password": "sofia123",
-      "rol": "user"
+      "rol": "user",
+      "events": [],
+      "id": "25e1"
+    },
+    {
+      "id": "f1f8",
+      "fullname": "Estiven",
+      "email": "estivenn@gmail.com",
+      "password": "123321",
+      "rol": "user",
+      "events": []
     }
   ],
-  "events":[
+  "events": [
     {
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgrzIas0rtIyJ7ccScxSgfjbh1XYTCuO6Qdg&s",
-      "description":"Lindo evento",
-      "capacity":12,
-      "date":"15/02/2025"
+      "name": "Karthi",
+      "description": "Lindo evento",
+      "capacity": "12",
+      "date": "15/02/2025",
+      "guests": [],
+      "id": "b68b"
+    },
+    {
+      "id": "acc5",
+      "name": "Sofia",
+      "description": "aaaaaa",
+      "capacity": "32",
+      "date": "2025-07-08",
+      "guest": []
+    },
+    {
+      "id": "637a",
+      "name": "",
+      "description": "",
+      "capacity": "",
+      "date": "",
+      "guest": []
+    },
+    {
+      "id": "133e",
+      "name": "Sofia",
+      "description": "asdasd",
+      "capacity": "12",
+      "date": "2025-07-19",
+      "guest": []
+    },
+    {
+      "id": "7d2e",
+      "name": "aaaa",
+      "description": "aaaaa",
+      "capacity": "12",
+      "date": "2025-07-05",
+      "guest": []
+    },
+    {
+      "id": "f743",
+      "name": "asdasdasd",
+      "description": "asasaasasd",
+      "capacity": "12",
+      "date": "2025-07-07",
+      "guest": []
     }
   ]
-
 }

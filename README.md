@@ -22,4 +22,4 @@ _Descargamos los archivos del repositorio "XXXXXXXXXX" y descomprimimos los arch
 
 ## Autores ✒️
 
-* **Estiven Zapata Muñoz** - *Desarrollo y documentación* - [EstivenZM](https://github.com/EstivenZM)
+* **Estiven Zapata Muñoz - Berners Lee - estivenzapata20986@gmail.com - 1011396325** - *Desarrollo y documentación* - [EstivenZM](https://github.com/EstivenZM)
